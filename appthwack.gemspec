@@ -3,7 +3,7 @@ require 'appthwack/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "appthwack"
-  gem.version       = Appurify::VERSION
+  gem.version       = Appthwack::VERSION
   gem.authors       = ["cisimple"]
   gem.email         = %w(team@cisimple.com)
   gem.description   = %q{API client for Appthwack}
