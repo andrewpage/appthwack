@@ -16,8 +16,21 @@ module Appthwack
       get("#{@base_url}/api/project/")
     end
     
+    def create_device_pool(name, device_ids)
+      payload = {
+        :name => name,
+        :devices => device_ids
+      }
+      
+      post("#{@base_url}/api/devicepool", payload)
+    end
+    
     def device_pools(project_id)
       get("#{@base_url}/api/devicepool/#{project_id}")
+    end
+    
+    def devices
+      get("#{@base_url}/api/device")
     end
     
     def upload_file(name, file)
